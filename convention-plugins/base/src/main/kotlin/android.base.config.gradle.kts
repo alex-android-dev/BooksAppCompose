@@ -1,0 +1,3 @@
+androidConfig {
+    compileSdk = libs.
+}

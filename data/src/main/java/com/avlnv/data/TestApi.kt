@@ -1,4 +1,4 @@
-package com.avlnv.booksappcompose.data
+package com.avlnv.data
 
 import kotlinx.coroutines.async
 import kotlinx.coroutines.runBlocking

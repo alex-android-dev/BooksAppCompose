@@ -1,4 +1,5 @@
 pluginManagement {
+    includeBuild("convention-plugins/base")
     repositories {
         google {
             content {
@@ -21,4 +22,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "BooksAppCompose"
 include(":app")
- 
+include(":data")
