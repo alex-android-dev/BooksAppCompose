@@ -56,6 +56,10 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
+    // retrofit
+    implementation(libs.retrofit)
+    implementation(libs.converter.gson)
 
-
+    // okhttp logging
+    implementation(libs.logging.interceptor)
 }
