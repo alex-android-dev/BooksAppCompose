@@ -15,7 +15,7 @@ interface ApiService {
     https://openlibrary.org/people/mekBot/books/want-to-read.json
      */
     @GET("people/mekBot/books/want-to-read.json")
-    suspend fun getBooks(): ExampleJson2KtKotlinCloud
+    suspend fun getWantToReadBooks(): ExampleJson2KtKotlinCloud
 
     @GET("people/mekBot/books/want-to-read.json")
     suspend fun getCoverByCoverEditionKey(coverEditionKey: String): String
