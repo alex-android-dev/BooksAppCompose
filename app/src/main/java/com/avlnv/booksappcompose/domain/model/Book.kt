@@ -6,5 +6,6 @@ data class Book(
     val authorKeys: List<String>,
     val authorNames: String,
     val firstPublishYear: Int,
+    val coverUrl: String,
     val localId: Int = -1
 )

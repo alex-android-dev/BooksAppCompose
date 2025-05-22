@@ -62,4 +62,8 @@ dependencies {
 
     // okhttp logging
     implementation(libs.logging.interceptor)
+
+    // coil
+    implementation(libs.coil.compose)
+    implementation(libs.coil.network.okhttp)
 }
