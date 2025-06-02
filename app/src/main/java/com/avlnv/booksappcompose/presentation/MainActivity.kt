@@ -14,7 +14,7 @@ import androidx.navigation.compose.rememberNavController
 import com.avlnv.booksappcompose.data.ApiFactory
 import com.avlnv.booksappcompose.data.toBookModelList
 import com.avlnv.booksappcompose.domain.model.Book
-import com.avlnv.booksappcompose.presentation.ScreenMain.ScreenMain
+import com.avlnv.booksappcompose.presentation.main.ScreenMain
 import com.avlnv.booksappcompose.ui.theme.BooksAppComposeTheme
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
@@ -27,8 +27,6 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             val navHostController = rememberNavController()
-
-
 
             BooksAppComposeTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->

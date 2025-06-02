@@ -6,13 +6,15 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.avlnv.booksappcompose.domain.model.Book
-import com.avlnv.booksappcompose.presentation.ScreenMain.ScreenMain
+import com.avlnv.booksappcompose.presentation.favorite.ScreenFavorite
+import com.avlnv.booksappcompose.presentation.main.ScreenMain
+import com.avlnv.booksappcompose.presentation.profile.ScreenProfile
 
 
 @Composable
 fun NavHostApp(
     navHostController: NavHostController,
-    bookList: List<Book>,
+    bookList: List<Book>, // TODO Сделать Immutable
     padding: PaddingValues
 ) {
 
@@ -29,15 +31,22 @@ fun NavHostApp(
         }
 
         composable(Screen.ROUTE_SEARCH) {
-
+            ScreenMain(
+                list = bookList,
+                padding = padding,
+            )
         }
 
         composable(Screen.ROUTE_FAVORITE) {
-
+            ScreenFavorite(
+                paddingValues = padding,
+            )
         }
 
         composable(Screen.ROUTE_PROFILE) {
-
+            ScreenProfile(
+                paddingValues = padding,
+            )
         }
 
     }

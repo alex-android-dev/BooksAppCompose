@@ -1,4 +1,4 @@
-package com.avlnv.booksappcompose.presentation.ScreenMain
+package com.avlnv.booksappcompose.presentation.main
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
