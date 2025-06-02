@@ -3,7 +3,7 @@ package com.avlnv.booksappcompose.presentation.navigation
 import okhttp3.Route
 
 sealed class Screen(
-    route: String,
+    val route: String,
 ) {
 
     data object Main : Screen(ROUTE_MAIN)

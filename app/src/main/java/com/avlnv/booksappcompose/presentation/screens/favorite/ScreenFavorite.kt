@@ -1,4 +1,4 @@
-package com.avlnv.booksappcompose.presentation.favorite
+package com.avlnv.booksappcompose.presentation.screens.favorite
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
@@ -12,13 +12,10 @@ fun ScreenFavorite(
     paddingValues: PaddingValues,
 ) {
 
-
     Box(
         modifier = Modifier.padding(paddingValues)
     ) {
         Text("favorite")
     }
-
-
 
 }

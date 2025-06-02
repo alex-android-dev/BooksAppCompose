@@ -1,4 +1,4 @@
-package com.avlnv.booksappcompose.presentation.main
+package com.avlnv.booksappcompose.presentation.screens.main
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
@@ -15,11 +15,11 @@ import com.avlnv.booksappcompose.presentation.BookScreen
 @Composable
 fun ScreenMain(
     list: List<Book>,
-    padding: PaddingValues
+    paddingValues: PaddingValues,
 ) {
 
     LazyColumn(
-        modifier = Modifier.padding(padding)
+        modifier = Modifier.padding(paddingValues)
     ) {
         items(
             items = list
@@ -28,4 +28,5 @@ fun ScreenMain(
             BookScreen(book)
         }
     }
+
 }

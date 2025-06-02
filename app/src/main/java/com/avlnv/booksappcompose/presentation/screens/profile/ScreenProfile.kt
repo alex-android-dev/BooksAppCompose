@@ -1,4 +1,4 @@
-package com.avlnv.booksappcompose.presentation.profile
+package com.avlnv.booksappcompose.presentation.screens.profile
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues

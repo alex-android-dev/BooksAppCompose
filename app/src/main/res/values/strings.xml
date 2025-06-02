@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">BooksAppCompose</string>
+    <string name="favorite">Favorite</string>
+    <string name="main">Main</string>
+    <string name="profile">Profile</string>
+    <string name="search">Search</string>
 </resources>
