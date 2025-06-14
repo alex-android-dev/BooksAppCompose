@@ -1,4 +1,4 @@
-package com.avlnv.booksappcompose.presentation.screens.profile
+package com.avlnv.feature_search
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
@@ -8,14 +8,12 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 
 @Composable
-fun ScreenProfile(
-    paddingValues: PaddingValues,
-) {
+fun ScreenSearch(paddingValues: PaddingValues) {
 
     Box(
         modifier = Modifier.padding(paddingValues)
     ) {
-        Text("profile")
+        Text("search")
     }
 
 }

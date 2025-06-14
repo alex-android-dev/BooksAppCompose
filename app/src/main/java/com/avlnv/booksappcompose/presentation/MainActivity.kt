@@ -13,8 +13,8 @@ import com.avlnv.booksappcompose.data.RepositoryImpl
 import com.avlnv.booksappcompose.presentation.navigation.AppNavGraph
 import com.avlnv.booksappcompose.presentation.navigation.rememberNavigationState
 import com.avlnv.feature_favorite.ScreenFavorite
-import com.avlnv.booksappcompose.presentation.screens.profile.ScreenProfile
-import com.avlnv.booksappcompose.presentation.screens.search.ScreenSearch
+import com.avlnv.feature_profile.ScreenProfile
+import com.avlnv.feature_search.ScreenSearch
 import com.avlnv.booksappcompose.ui.theme.BooksAppComposeTheme
 import com.avlnv.feature_booklist.main.BookListViewModel
 import com.avlnv.feature_booklist.main.ScreenMain
@@ -55,7 +55,7 @@ class MainActivity : ComponentActivity() {
                         },
 
                         screenSearch = {
-                            ScreenSearch(innerPadding)
+                            com.avlnv.feature_search.ScreenSearch(innerPadding)
                         },
 
                         screenFavorite = {
@@ -63,7 +63,7 @@ class MainActivity : ComponentActivity() {
                         },
 
                         screenProfile = {
-                            ScreenProfile(innerPadding)
+                            com.avlnv.feature_profile.ScreenProfile(innerPadding)
                         },
                     )
                 }
