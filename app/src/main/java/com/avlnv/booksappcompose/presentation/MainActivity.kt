@@ -9,12 +9,9 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.MutableCreationExtras
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.avlnv.booksappcompose.data.RepositoryImpl
+import com.avlnv.data.RepositoryImpl
 import com.avlnv.booksappcompose.presentation.navigation.AppNavGraph
 import com.avlnv.booksappcompose.presentation.navigation.rememberNavigationState
-import com.avlnv.feature_favorite.ScreenFavorite
-import com.avlnv.feature_profile.ScreenProfile
-import com.avlnv.feature_search.ScreenSearch
 import com.avlnv.booksappcompose.ui.theme.BooksAppComposeTheme
 import com.avlnv.feature_booklist.main.BookListViewModel
 import com.avlnv.feature_booklist.main.ScreenMain

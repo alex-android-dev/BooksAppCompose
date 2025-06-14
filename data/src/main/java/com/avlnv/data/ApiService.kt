@@ -1,4 +1,4 @@
-package com.avlnv.booksappcompose.data
+package com.avlnv.data
 
 import Flow.dictionary.ExampleJson2KtKotlinCloud
 import retrofit2.http.GET

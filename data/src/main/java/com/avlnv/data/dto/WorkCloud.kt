@@ -12,6 +12,4 @@ data class WorkCloud(
     @SerializedName("edition_key") val editionKey: List<String> = arrayListOf(),
     @SerializedName("cover_id") val coverId: Long? = null,
     @SerializedName("cover_edition_key") val coverEditionKey: String
-) {
-
-}
+)
