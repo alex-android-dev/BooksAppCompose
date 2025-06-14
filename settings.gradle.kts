@@ -23,3 +23,4 @@ rootProject.name = "BooksAppCompose"
 include(":app")
 include(":feature_booklist")
 include(":domain")
+include(":feature_favorite")

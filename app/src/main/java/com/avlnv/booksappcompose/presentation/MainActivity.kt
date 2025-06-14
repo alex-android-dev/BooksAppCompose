@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
             val viewModel: BookListViewModel = viewModel(
                 factory = BookListViewModel.Factory,
                 extras = MutableCreationExtras().apply {
-                    set(BookListViewModel.Factory.ARG_REPOSITORY_KEY, repository)
+                    set(BookListViewModel.ARG_REPOSITORY, repository)
                 }
             )
 
