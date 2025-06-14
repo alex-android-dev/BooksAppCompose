@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "BooksAppCompose"
 include(":app")
- 
+include(":feature_booklist")
+include(":domain")

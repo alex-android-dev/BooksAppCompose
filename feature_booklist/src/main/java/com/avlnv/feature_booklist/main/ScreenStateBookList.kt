@@ -1,6 +1,6 @@
-package com.avlnv.booksappcompose.presentation.screens.main
+package com.avlnv.feature_booklist.main
 
-import com.avlnv.booksappcompose.domain.model.Book
+import com.avlnv.domain.model.Book
 
 sealed class ScreenStateBookList {
 

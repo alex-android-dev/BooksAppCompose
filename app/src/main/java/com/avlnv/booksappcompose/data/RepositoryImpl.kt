@@ -1,13 +1,12 @@
 package com.avlnv.booksappcompose.data
 
-import com.avlnv.booksappcompose.domain.model.Book
-import com.avlnv.booksappcompose.domain.model.Repository
+import com.avlnv.domain.Repository
 
 class RepositoryImpl : Repository {
 
     private val apiService = ApiFactory.apiService
 
-    override suspend fun getWantToReadBooks(): Result<List<Book>> =
+    override suspend fun getWantToReadBooks(): Result<List<com.avlnv.domain.model.Book>> =
         runCatching {
             apiService.getWantToReadBooks().readingLogEntries.toBookModelList()
         }

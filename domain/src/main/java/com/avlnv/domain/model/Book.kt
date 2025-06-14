@@ -1,4 +1,4 @@
-package com.avlnv.booksappcompose.domain.model
+package com.avlnv.domain.model
 
 data class Book(
     val title: String,

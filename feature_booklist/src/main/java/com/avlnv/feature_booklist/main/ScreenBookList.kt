@@ -1,4 +1,4 @@
-package com.avlnv.booksappcompose.presentation.screens.main
+package com.avlnv.feature_booklist.main
 
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.Spacer
@@ -10,8 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.avlnv.booksappcompose.domain.model.Book
-import com.avlnv.booksappcompose.presentation.BookScreen
+import com.avlnv.domain.model.Book
 
 @Composable
 fun ScreenMain(

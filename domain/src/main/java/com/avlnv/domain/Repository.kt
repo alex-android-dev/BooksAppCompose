@@ -1,4 +1,6 @@
-package com.avlnv.booksappcompose.domain.model
+package com.avlnv.domain
+
+import com.avlnv.domain.model.Book
 
 interface Repository {
 

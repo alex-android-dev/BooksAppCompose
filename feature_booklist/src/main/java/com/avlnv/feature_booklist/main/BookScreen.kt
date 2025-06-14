@@ -1,4 +1,4 @@
-package com.avlnv.booksappcompose.presentation
+package com.avlnv.feature_booklist.main
 
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -9,10 +9,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil3.compose.AsyncImage
-import com.avlnv.booksappcompose.domain.model.Book
 
 @Composable
-fun BookScreen(book: Book) {
+fun BookScreen(book: com.avlnv.domain.model.Book) {
 
     Row {
         AsyncImage(
@@ -36,7 +35,7 @@ fun BookScreenPreview() {
     val coverUrl =
         "https://covers.openlibrary.org/b/olid/OL7440033M-M.jpg"
 
-    val book = Book(
+    val book = com.avlnv.domain.model.Book(
         title = "title",
         key = "",
         authorKeys = listOf(),

@@ -2,7 +2,7 @@ package com.avlnv.booksappcompose.data
 
 import Flow.dictionary.ReadingLogEntriesCloud
 import Flow.dictionary.WorkCloud
-import com.avlnv.booksappcompose.domain.model.Book
+import com.avlnv.domain.model.Book
 
 /**
  * mapper [WorkCloud]
@@ -16,7 +16,7 @@ const val COVER_URL = "https://covers.openlibrary.org/b/olid/"
 const val M_SIZE = "-M"
 const val JPG_FORMAT = ".jpg"
 
-fun WorkCloud.toBookModel() = Book(
+fun WorkCloud.toBookModel() = com.avlnv.domain.model.Book(
     title = this.title ?: "",
     key = this.key ?: "",
     authorKeys = this.authorKeys,
