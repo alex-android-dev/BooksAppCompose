@@ -73,5 +73,9 @@ dependencies {
 
     // modules
     implementation(project(":feature_booklist"))
+    implementation(project(":feature_favorite"))
+    implementation(project(":feature_profile"))
+    implementation(project(":feature_search"))
+
     implementation(project(":domain"))
 }
