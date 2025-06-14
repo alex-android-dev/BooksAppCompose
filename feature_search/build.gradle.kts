@@ -1,21 +1,18 @@
 plugins {
-    alias(libs.plugins.android.application)
+    alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 }
 
 android {
-    namespace = "com.avlnv.booksappcompose"
+    namespace = "com.avlnv.feature_search"
     compileSdk = 35
 
     defaultConfig {
-        applicationId = "com.avlnv.booksappcompose"
         minSdk = 26
-        targetSdk = 35
-        versionCode = 1
-        versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles("consumer-rules.pro")
     }
 
     buildTypes {
@@ -56,27 +53,9 @@ dependencies {
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
 
-    // retrofit
-    implementation(libs.retrofit)
-    implementation(libs.converter.gson)
-
-    // okhttp logging
-    implementation(libs.logging.interceptor)
-
     // coil
     implementation(libs.coil.compose)
     implementation(libs.coil.network.okhttp)
 
-
-    // navigation compose
-    implementation(libs.androidx.navigation.compose)
-
-    // modules
-    implementation(project(":feature_booklist"))
-    implementation(project(":feature_favorite"))
-    implementation(project(":feature_profile"))
-    implementation(project(":feature_search"))
-
-    implementation(project(":data"))
     implementation(project(":domain"))
 }
