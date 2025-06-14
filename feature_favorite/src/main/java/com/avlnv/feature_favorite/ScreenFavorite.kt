@@ -1,4 +1,4 @@
-package com.avlnv.booksappcompose.presentation.screens.favorite
+package com.avlnv.feature_favorite
 
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues

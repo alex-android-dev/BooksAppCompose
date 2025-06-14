@@ -9,11 +9,10 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.lifecycle.viewmodel.MutableCreationExtras
 import androidx.lifecycle.viewmodel.compose.viewModel
-import com.avlnv.booksappcompose.data.ApiFactory
 import com.avlnv.booksappcompose.data.RepositoryImpl
 import com.avlnv.booksappcompose.presentation.navigation.AppNavGraph
 import com.avlnv.booksappcompose.presentation.navigation.rememberNavigationState
-import com.avlnv.booksappcompose.presentation.screens.favorite.ScreenFavorite
+import com.avlnv.feature_favorite.ScreenFavorite
 import com.avlnv.booksappcompose.presentation.screens.profile.ScreenProfile
 import com.avlnv.booksappcompose.presentation.screens.search.ScreenSearch
 import com.avlnv.booksappcompose.ui.theme.BooksAppComposeTheme
@@ -60,7 +59,7 @@ class MainActivity : ComponentActivity() {
                         },
 
                         screenFavorite = {
-                            ScreenFavorite(innerPadding)
+                            com.avlnv.feature_favorite.ScreenFavorite(innerPadding)
                         },
 
                         screenProfile = {
